@@ -45,17 +45,17 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release(MavenPublication) {
-//                from components.release // This assumes your library is an Android Library
-//
-//                groupId = 'com.github.chowis' // Replace with your desired group ID
-//                artifactId = 'country_picker_dialog' // Replace with your library's artifact ID
-//                version = '1.0.3' // Replace with the version of your library
-//
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release // This assumes your library is an Android Library
+
+                groupId = 'com.github.chowis' // Replace with your desired group ID
+                artifactId = 'country_picker_dialog' // Replace with your library's artifact ID
+                version = '1.0.3' // Replace with the version of your library
+
+            }
+        }
+    }
+}
