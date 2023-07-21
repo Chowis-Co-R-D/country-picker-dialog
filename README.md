@@ -20,9 +20,12 @@ Add it in your root build.gradle at the end of repositories:
 	}
 
 
-How to implement:
+How to implement
+
+
 override fun onCreate(savedInstanceState: Bundle?) {
     val dialog = CountryPickerDialog(this)
 }
+
 
 
