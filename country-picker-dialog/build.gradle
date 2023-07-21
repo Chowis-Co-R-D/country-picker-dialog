@@ -45,14 +45,14 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-//afterEvaluate {
-//    publishing {
-//        publications {
-//            release (MavenPublication){
-//                from components.release
-//                groupId = 'com.github.Chowis-Co-R-D'
-//                version = 1.0.0
-//            }
-//        }
-//    }
-//}
+afterEvaluate {
+    publishing {
+        publications {
+            release (MavenPublication){
+                from components.release
+                groupId = 'com.github.Chowis-Co-R-D'
+                version = '1.0.0'
+            }
+        }
+    }
+}
