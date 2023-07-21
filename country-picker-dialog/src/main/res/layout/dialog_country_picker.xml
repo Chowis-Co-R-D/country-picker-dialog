@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    android:id="@+id/dialog_cardview"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_marginHorizontal="2dp"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:queryHint="Search"
+            app:iconifiedByDefault="false"
+            android:id="@+id/dialog_searchview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@id/dialog_searchview"
+            android:scrollbars="vertical"
+            android:id="@+id/dialog_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
